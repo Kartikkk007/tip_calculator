@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+
+@keyframes move {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+        }
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    animation: fadeIn 1s ease-in-out 0.5s;
+}
+
+input[type="number"] {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    transition: border-color 0.5s ease-in-out;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    width: 95%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #6a08fd;
+    opacity: 0.8; /* Add this line to fade out the button on hover */
+}
+
+#total {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    animation: fadeIn 1s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
